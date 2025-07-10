@@ -1,0 +1,6 @@
+# Test configuration for Bun
+preload = []
+smol = false
+coverage = true
+coverageThreshold = 80
+coverageSkipNodeModules = true

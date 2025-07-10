@@ -1,0 +1,54 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"defaultBranch": "main",
+		"useIgnoreFile": true
+	},
+	"formatter": {
+		"formatWithErrors": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"noUnusedVariables": "error",
+				"noConstAssign": "error",
+				"noUndeclaredVariables": "error",
+				"noUnusedImports": "error"
+			},
+			"style": {
+				"noUnusedTemplateLiteral": "off",
+				"noNonNullAssertion": "off",
+				"noParameterAssign": "error",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useSelfClosingElements": "error",
+				"useSingleVarDeclarator": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"noUselessElse": "error"
+			},
+			"security": {
+				"noGlobalEval": "off"
+			}
+		}
+	},
+	"javascript": {
+		"globals": ["Bun"],
+		"formatter": {
+			"semicolons": "asNeeded",
+			"trailingCommas": "none"
+		}
+	},
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "off"
+			}
+		}
+	}
+}

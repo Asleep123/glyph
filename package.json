@@ -1,0 +1,70 @@
+{
+	"name": "glyph",
+	"version": "0.0.1",
+	"description": "A simple and interactive terminal form-maker using zero external dependencies.",
+	"main": "dist/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/esm/index.js",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "npm run clean && npm run build:cjs && npm run build:esm",
+		"build:cjs": "tsc -p tsconfig.build.json",
+		"build:esm": "tsc -p tsconfig.esm.json",
+		"clean": "rm -rf dist",
+		"dev": "bun run test.ts",
+		"test": "bun test",
+		"test:watch": "bun test --watch",
+		"test:coverage": "bun test --coverage",
+		"lint": "biome check .",
+		"lint:fix": "biome check --apply .",
+		"format": "biome format --write .",
+		"typecheck": "tsc --noEmit",
+		"prepublishOnly": "npm run build && npm run test && npm run lint"
+	},
+	"keywords": [
+		"cli",
+		"terminal",
+		"interactive",
+		"form",
+		"input",
+		"prompt",
+		"question",
+		"select",
+		"text",
+		"typescript",
+		"zero-dependencies"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Asleep123/glyph.git"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/node": "^20.0.0",
+		"typescript": "^5.0.0",
+		"@biomejs/biome": "^2.1.1"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {},
+	"publishConfig": {
+		"access": "public"
+	}
+}
