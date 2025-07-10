@@ -1,5 +1,5 @@
 {
-	"name": "glyph",
+	"name": "glyphjs",
 	"version": "0.0.1",
 	"description": "A simple and interactive terminal form-maker using zero external dependencies.",
 	"main": "dist/index.js",

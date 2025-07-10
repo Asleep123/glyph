@@ -21,7 +21,6 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
     
     - name: Setup Bun
       uses: oven-sh/setup-bun@v1
@@ -46,9 +45,9 @@ jobs:
     - name: Test package installation
       run: |
         cd /tmp
-        npm init -y
+        echo '{"type": "module"}' > package.json
         npm install ${{ github.workspace }}
-        node -e "console.log(require('glyph'))"
+        node -e "import('glyphjs').then(pkg => console.log('Package imported successfully:', Object.keys(pkg)))"
 
   publish:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
