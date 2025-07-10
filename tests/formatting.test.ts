@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test"
-import { Colors, Styles, type Formatting } from "../functions/formatting"
+import { Colors, Styles, type Formatting } from "../functions/formatting.js"
 
 describe("Colors", () => {
 	test("should have reset color", () => {

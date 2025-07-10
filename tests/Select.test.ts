@@ -1,9 +1,9 @@
 import { describe, test, expect, beforeEach } from "bun:test"
-import { Select } from "../classes/Select"
-import { Option } from "../classes/Option"
-import { View } from "../classes/View"
-import { GlyphError } from "../classes/GlyphError"
-import type { Answer } from "../classes/Answer"
+import { Select } from "../classes/Select.js"
+import { Option } from "../classes/Option.js"
+import { View } from "../classes/View.js"
+import { GlyphError } from "../classes/GlyphError.js"
+import type { Answer } from "../classes/Answer.js"
 
 describe("Select", () => {
 	let view: View

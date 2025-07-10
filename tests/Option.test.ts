@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test"
-import { Option } from "../classes/Option"
+import { Option } from "../classes/Option.js"
 
 describe("Option", () => {
 	test("should create an Option instance", () => {

@@ -1,9 +1,9 @@
 import { describe, test, expect } from "bun:test"
-import { Select } from "../classes/Select"
-import { Text } from "../classes/Text"
-import { View } from "../classes/View"
-import { Option } from "../classes/Option"
-import type { Answer } from "../classes/Answer"
+import { Select } from "../classes/Select.js"
+import { Text } from "../classes/Text.js"
+import { View } from "../classes/View.js"
+import { Option } from "../classes/Option.js"
+import type { Answer } from "../classes/Answer.js"
 
 describe("Integration Tests", () => {
 	test("should create a complete form workflow", () => {

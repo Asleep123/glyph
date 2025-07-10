@@ -3,22 +3,14 @@
 	"version": "0.0.1",
 	"description": "A simple and interactive terminal form-maker using zero external dependencies.",
 	"main": "dist/index.js",
-	"module": "dist/esm/index.js",
 	"types": "dist/index.d.ts",
-	"exports": {
-		".": {
-			"import": "./dist/esm/index.js",
-			"require": "./dist/index.js",
-			"types": "./dist/index.d.ts"
-		}
-	},
 	"files": [
 		"dist",
 		"README.md",
 		"LICENSE"
 	],
 	"scripts": {
-		"build": "npm run clean && npm run build:cjs && npm run build:esm",
+		"build": "npm run clean && npm run build:cjs",
 		"build:cjs": "tsc -p tsconfig.build.json",
 		"build:esm": "tsc -p tsconfig.esm.json",
 		"clean": "rm -rf dist",

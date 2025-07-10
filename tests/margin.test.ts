@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test"
-import { getMargin } from "../functions/margin"
+import { getMargin } from "../functions/margin.js"
 
 describe("getMargin", () => {
 	test("should return empty string when format does not contain until string", () => {

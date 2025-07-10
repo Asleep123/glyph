@@ -1,10 +1,10 @@
 import { describe, test, expect } from "bun:test"
-import { View } from "../classes/View"
-import { Select } from "../classes/Select"
-import { Text } from "../classes/Text"
-import { Option } from "../classes/Option"
-import { GlyphError } from "../classes/GlyphError"
-import type { Answer } from "../classes/Answer"
+import { View } from "../classes/View.js"
+import { Select } from "../classes/Select.js"
+import { Text } from "../classes/Text.js"
+import { Option } from "../classes/Option.js"
+import { GlyphError } from "../classes/GlyphError.js"
+import type { Answer } from "../classes/Answer.js"
 
 describe("View", () => {
 	test("should create a View instance", () => {

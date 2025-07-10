@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test"
-import { GlyphError } from "../classes/GlyphError"
+import { GlyphError } from "../classes/GlyphError.js"
 
 describe("GlyphError", () => {
 	test("should extend Error class", () => {

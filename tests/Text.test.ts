@@ -1,7 +1,7 @@
 import { describe, test, expect, beforeEach } from "bun:test"
-import { Text } from "../classes/Text"
-import { View } from "../classes/View"
-import type { Answer } from "../classes/Answer"
+import { Text } from "../classes/Text.js"
+import { View } from "../classes/View.js"
+import type { Answer } from "../classes/Answer.js"
 
 describe("Text", () => {
 	let view: View
