@@ -1,5 +1,5 @@
 {
-	"name": "glyphjs",
+	"name": "glyphic",
 	"version": "0.0.1",
 	"description": "A simple and interactive terminal form-maker using zero external dependencies.",
 	"main": "dist/index.js",
@@ -40,7 +40,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Asleep123/glyph.git"
+		"url": "https://github.com/Asleep123/glyphic.git"
 	},
 	"engines": {
 		"node": ">=16.0.0"
